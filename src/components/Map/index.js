@@ -20,8 +20,8 @@ class Map extends React.Component {
     const format = d3.format(',');
 
     const margin = {top: 0, right: 0, bottom: 0, left: 0};
-    const width = 960 - margin.left - margin.right;
-    const height = 500 - margin.top - margin.bottom;
+    const width = 1000 - margin.left - margin.right;
+    const height = 700 - margin.top - margin.bottom;
 
     const color = d3.scaleThreshold()
       .domain([
