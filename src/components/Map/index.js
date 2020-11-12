@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import * as d3 from "d3";
 import * as topojson from "topojson";
+import * as worldCountries from './data/world_countries.json';
 
 class Map extends React.Component {
   componentDidMount() {
@@ -12,17 +13,11 @@ class Map extends React.Component {
     this.updateChart();
   }
 
-  updateChart() {
+  async updateChart() {
     //this.updateScales();
-    const { data, animDuration } = this.props;
+    const { data } = this.props;
 
     const format = d3.format(',');
-
-// Set tooltips
-//    const tip = d3.tip()
-//      .attr('class', 'd3-tip')
-//      .offset([-10, 0])
-//      .html(d => `<strong>Country: </strong><span class='details'>${d.properties.name}<br></span><strong>Population: </strong><span class='details'>${format(d.population)}</span>`);
 
     const margin = {top: 0, right: 0, bottom: 0, left: 0};
     const width = 960 - margin.left - margin.right;
@@ -61,24 +56,24 @@ class Map extends React.Component {
       .attr('class', 'map');
 
     const projection = d3.geoMercator()
-      .scale(130)
+      .scale(150)
       .translate( [width / 2, height / 1.5]);
 
     const path = d3.geoPath().projection(projection);
+    ready(worldCountries, data)
 
-    //svg.call(tip);
-
-    ready(data);
-
-    function ready(data) {
+    function ready(countriesData, population) {
       const populationById = {};
+      population.forEach(d => { populationById[d.id] = +d.population; });
+      countriesData.default.features.forEach(d => { d.population = populationById[d.id] });
+
       svg.append('g')
         .attr('class', 'countries')
         .selectAll('path')
-        .data(data)
+        .data(countriesData.default.features)
         .enter().append('path')
         .attr('d', path)
-        .style('fill', d => color(d.value))
+        .style('fill', d => color(populationById[d.id]))
         .style('stroke', 'white')
         .style('opacity', 0.8)
         .style('stroke-width', 0.3)
@@ -97,7 +92,7 @@ class Map extends React.Component {
         });
 
       svg.append('path')
-        .datum(topojson.mesh(data, (a, b) => a.id !== b.id))
+        .datum(topojson.mesh(countriesData.default, (a, b) => a.id !== b.id))
         .attr('class', 'names')
         .attr('d', path);
     }
