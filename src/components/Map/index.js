@@ -64,10 +64,16 @@ class Map extends React.Component {
 
     function ready(countriesData, population) {
       const populationById = {};
-      population.forEach(d => { populationById[d.id] = +d.population; });
-      countriesData.default.features.forEach(d => { d.population = populationById[d.id] });
+      population.forEach(d => {
+        populationById[d.id] = +d.population;
+      });
+      countriesData.default.features.forEach(d => {
+        d.population = populationById[d.id]
+      });
 
-      svg.append('g')
+      const g = svg.append("g");
+
+      g.append('g')
         .attr('class', 'countries')
         .selectAll('path')
         .data(countriesData.default.features)
@@ -78,24 +84,38 @@ class Map extends React.Component {
         .style('opacity', 0.8)
         .style('stroke-width', 0.3)
         // tooltips
-        .on('mouseover',function(d){
+        .on('mouseover', function (d) {
           //tip.show(d);
           d3.select(this)
             .style('opacity', 1)
             .style('stroke-width', 3);
         })
-        .on('mouseout', function(d){
+        .on('mouseout', function (d) {
           //tip.hide(d);
           d3.select(this)
             .style('opacity', 0.8)
-            .style('stroke-width',0.3);
+            .style('stroke-width', 0.3);
         });
+
+      const zoom = d3.zoom()
+        .scaleExtent([1, 8])
+        .on("zoom", zoomed);
+
+      function zoomed(event) {
+        const {transform} = event;
+        g.attr("transform", transform);
+        g.attr("stroke-width", 1 / transform.k);
+      }
+
+      svg.call(zoom);
 
       svg.append('path')
         .datum(topojson.mesh(countriesData.default, (a, b) => a.id !== b.id))
         .attr('class', 'names')
         .attr('d', path);
     }
+
+    return svg.node()
   }
 
   updateScales() {
