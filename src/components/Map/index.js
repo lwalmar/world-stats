@@ -9,10 +9,6 @@ class Map extends React.Component {
     this.updateChart();
   }
 
-  componentDidUpdate() {
-    this.updateChart();
-  }
-
   async updateChart() {
     //this.updateScales();
     const { data, onSelectedCountryIdChange } = this.props;
