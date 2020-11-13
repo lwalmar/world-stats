@@ -15,7 +15,7 @@ class Map extends React.Component {
 
   async updateChart() {
     //this.updateScales();
-    const { data } = this.props;
+    const { data, onSelectedCountryIdChange } = this.props;
 
     const format = d3.format(',');
 
@@ -71,6 +71,11 @@ class Map extends React.Component {
         d.population = populationById[d.id]
       });
 
+      function clicked(event, data, item) {
+        event.stopPropagation();
+        onSelectedCountryIdChange(data.id);
+      }
+
       const g = svg.append("g");
 
       g.append('g')
@@ -78,20 +83,18 @@ class Map extends React.Component {
         .selectAll('path')
         .data(countriesData.default.features)
         .enter().append('path')
+        .on("click", clicked)
         .attr('d', path)
         .style('fill', d => color(populationById[d.id]))
         .style('stroke', 'white')
         .style('opacity', 0.8)
         .style('stroke-width', 0.3)
-        // tooltips
         .on('mouseover', function (d) {
-          //tip.show(d);
           d3.select(this)
             .style('opacity', 1)
-            .style('stroke-width', 3);
+            .style('stroke-width', 1);
         })
         .on('mouseout', function (d) {
-          //tip.hide(d);
           d3.select(this)
             .style('opacity', 0.8)
             .style('stroke-width', 0.3);
@@ -144,10 +147,11 @@ Map.defaultProps = {
 };
 
 Map.propTypes = {
+  animDuration: PropTypes.number,
   data: PropTypes.array.isRequired,
+  onSelectedCountryIdChange: PropTypes.func.isRequired,
   width: PropTypes.number.isRequired,
-  height: PropTypes.number.isRequired,
-  animDuration: PropTypes.number
+  height: PropTypes.number.isRequired
 };
 
 export default Map;

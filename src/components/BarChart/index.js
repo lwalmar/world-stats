@@ -30,7 +30,6 @@ class BarChart extends React.Component {
       .style("fill-opacity", 0)
       .remove();
 
-    console.log('this.scaleColor', this.scaleColor)
     bars.enter()
       .append("rect")
       .attr("class", "bar")
