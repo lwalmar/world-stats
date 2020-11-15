@@ -21,16 +21,16 @@ class Map extends React.Component {
 
     const color = d3.scaleThreshold()
       .domain([
-        10000,
-        100000,
-        500000,
-        1000000,
-        5000000,
-        10000000,
-        50000000,
-        100000000,
-        500000000,
-        1500000000
+        0,
+        50,
+        100,
+        150,
+        200,
+        250,
+        300,
+        350,
+        400,
+        450
       ])
       .range([
         'rgb(247,251,255)',
@@ -58,13 +58,13 @@ class Map extends React.Component {
     const path = d3.geoPath().projection(projection);
     ready(worldCountries, data)
 
-    function ready(countriesData, population) {
-      const populationById = {};
-      population.forEach(d => {
-        populationById[d.id] = +d.population;
+    function ready(countriesData, profits) {
+      const profitsById = {};
+      profits.forEach(d => {
+        profitsById[d.id] = +d.profits;
       });
       countriesData.default.features.forEach(d => {
-        d.population = populationById[d.id]
+        d.profits = profitsById[d.id]
       });
 
       function clicked(event, data, item) {
@@ -81,7 +81,7 @@ class Map extends React.Component {
         .enter().append('path')
         .on("click", clicked)
         .attr('d', path)
-        .style('fill', d => color(populationById[d.id]))
+        .style('fill', d => color(profitsById[d.id]))
         .style('stroke', 'white')
         .style('opacity', 0.8)
         .style('stroke-width', 0.3)
