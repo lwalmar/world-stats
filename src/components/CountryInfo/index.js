@@ -8,18 +8,16 @@ const getCountryProfitData = (countryId) => {
   const countryProfits = worldProfits.default[countryId];
 
   return countryProfits
-    ? countryProfits.map((profitsByPeriod) => (
-      [
-        {y: profitsByPeriod.profits},
-        {y: profitsByPeriod.dividendsAndBuybacks},
-        {y: profitsByPeriod.netDebtOfHouseholdsAndNISH},
-        {y: profitsByPeriod.netDebtOfGeneralGovernment},
-        {y: profitsByPeriod.fixedAssetsofDomesticBusiness},
-        {y: profitsByPeriod.currentAmount},
-        {y: profitsByPeriod.otherFactors},
-        {y: profitsByPeriod.discrepancies}
-      ]
-    ))
+    ? [
+      'profits',
+      'dividendsAndBuybacks',
+      'netDebtOfHouseholdsAndNISH',
+      'netDebtOfGeneralGovernment',
+      'fixedAssetsofDomesticBusiness',
+      'currentAmount',
+      'otherFactors',
+      'discrepancies'
+    ].map((prop) => countryProfits.map((countryProfit) => ({y: countryProfit[prop]})))
     : [];
 };
 const getCountryName = (countryId) => {

@@ -96,8 +96,11 @@ class BarChart extends React.Component {
   updateScales() {
     const { data, width, height } = this.props;
     this.scaleColor.domain([0, data.length]);
+    if (data.length === 0) {
+      return;
+    }
     this.scaleWidth
-      .domain(data.map((d, i) => i))
+      .domain(data[0].map((d, i) => i))
       .range([0, width]);
 
     barStack(data);
