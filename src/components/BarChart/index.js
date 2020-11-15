@@ -80,33 +80,31 @@ class BarChart extends React.Component {
       .attr("height", (d) => (this.scaleHeight(0) - this.scaleHeight(d.size)))
       .attr("width", this.scaleWidth.bandwidth());
 
-    //var xAxis = d3.svg.axis()
-    //  .scale(this.scaleWidth)
-    //  .orient("bottom")
-    //  .tickSize(6, 0);
-    //
-    //var yAxis = d3.svg.axis()
-    //  .scale(this.scaleHeight)
-    //  .orient("left");
-    //
-    //svg.append("g").attr("class","axis x").attr("transform","translate (0 "+this.scaleHeight(0)+")").call(xAxis)
-    //svg.append("g").attr("class","axis y").attr("transform","translate ("+this.scaleWidth(margin)+" 0)").call(yAxis)
+    var xAxis = d3.axisBottom()
+      .scale(this.scaleWidth);
+
+    var yAxis = d3.axisLeft()
+      .scale(this.scaleHeight)
+      .tickSize(6, 0);
+
+    svg.append("g").attr("class","axis x").attr("transform","translate (0 "+this.scaleHeight(0)+")").call(xAxis)
+    svg.append("g").attr("class","axis y").attr("transform","translate ("+margin+" 0)").call(yAxis)
   }
 
   updateScales() {
-    const { data, width, height } = this.props;
+    const { data, width, height, margin } = this.props;
     this.scaleColor.domain([0, data.length]);
     if (data.length === 0) {
       return;
     }
     this.scaleWidth
       .domain(data[0].map((d, i) => i))
-      .range([0, width]);
+      .range([margin, width - margin]);
 
     barStack(data);
     this.scaleHeight
       .domain(data.extent)
-      .range([height - 20, 0]);
+      .range([ height - margin,0 + margin]);
   }
 
   render() {

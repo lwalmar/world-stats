@@ -54,6 +54,7 @@ export const CountryInfo = ({
           data={countryProfitData}
           width={width}
           height={height}
+          margin={1}
         />
       </div>
     </div>
