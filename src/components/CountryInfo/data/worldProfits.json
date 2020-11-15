@@ -35,7 +35,7 @@
     {"period": "year", "value": "2017",  "profits": 345, "dividendsAndBuybacks": 106, "netDebtOfHouseholdsAndNISH": -53, "netDebtOfGeneralGovernment": 23, "fixedAssetsofDomesticBusiness": 148, "currentAmount": 83, "otherFactors": -101, "discrepancies": -14},
     {"period": "year", "value": "2018",  "profits": 504, "dividendsAndBuybacks": 115, "netDebtOfHouseholdsAndNISH": -29, "netDebtOfGeneralGovernment": -48, "fixedAssetsofDomesticBusiness": 138, "currentAmount": 164, "otherFactors": -93, "discrepancies": 2}
   ],
-  "CHI": [
+  "CHN": [
     {"period": "year", "value": "2003",  "profits": 69, "dividendsAndBuybacks": 21, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsofDomesticBusiness": -38, "currentAmount": 47, "otherFactors": -19, "discrepancies": -31},
     {"period": "year", "value": "2004",  "profits": 69, "dividendsAndBuybacks": 29, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsofDomesticBusiness": 54, "currentAmount": 72, "otherFactors": -22, "discrepancies": -58},
     {"period": "year", "value": "2005",  "profits": 114, "dividendsAndBuybacks": 43, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsofDomesticBusiness": 60, "currentAmount": 105, "otherFactors": -45, "discrepancies": -75},
