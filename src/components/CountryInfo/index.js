@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import * as worldProfits from './data/worldProfits.json';
 import * as worldCountries from '../Map/data/world_countries.json';
 import StackChart from '../BarChart';
@@ -34,16 +34,28 @@ export const CountryInfo = ({
 }) => {
   const [countryProfitData, setcountryProfitData] = useState(getCountryProfitData(countryId));
   const [countryName, setCountryName] = useState(getCountryName(countryId));
+  const [height, setHeight] = useState(0)
+  const [width, setWidth] = useState(0)
+  const ref = useRef(null)
+
+  useEffect(() => {
+    setHeight(ref.current.clientHeight)
+    setWidth(ref.current.clientWidth)
+  }, [countryId])
+
   return (
     <div className="countryInfo">
       <div className='countryInfo_header'>
         {countryName}
       </div>
-      <div>
+      <div
+        className='countryInfo_chart'
+        ref={ref}
+      >
         <StackChart
           data={countryProfitData}
-          width={700}
-          height={400}
+          width={width}
+          height={height}
         />
       </div>
     </div>

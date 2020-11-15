@@ -49,8 +49,11 @@ class BarChart extends React.Component {
   }
 
   updateChart() {
-    this.updateScales();
     const { data, width, height, animDuration, margin} = this.props;
+    if (width ===0 || height === 0 || data.length === 0) {
+      return;
+    }
+    this.updateScales();
 
     const svg = d3.select(this.viz);
 

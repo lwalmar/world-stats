@@ -3,3 +3,14 @@
     max-width: 1400px !important;
     width: 100%;
 }
+
+.countryInfo {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.countryInfo_chart {
+    display: flex;
+    flex: 1;
+}
