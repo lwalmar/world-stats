@@ -2,3 +2,9 @@
     fill: none;
     stroke: white;
 }
+
+.barChart_line {
+    fill: none;
+    stroke: #000;
+    stroke-width: 2px;
+}

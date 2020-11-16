@@ -97,6 +97,20 @@ class StackChart extends React.Component {
         [width, this.scaleHeight(0)]
       ]
     ))
+
+    this.drawLine(svg);
+  }
+
+  drawLine (svg) {
+    const {lineData, margin} = this.props;
+    const line = d3.line()
+      .x((d) => this.scaleWidth(d.x) + this.scaleWidth.bandwidth()/2)
+      .y((d) => this.scaleHeight(d.y));
+
+    svg.append("path")
+      .datum(lineData)
+      .attr("class", "barChart_line")
+      .attr("d", line);
   }
 
   updateScales() {
@@ -130,11 +144,12 @@ StackChart.defaultProps = {
 };
 
 StackChart.propTypes = {
+  animDuration: PropTypes.number,
+  lineData: PropTypes.array.isRequired,
   stackData: PropTypes.array.isRequired,
   margin: PropTypes.number,
   width: PropTypes.number.isRequired,
-  height: PropTypes.number.isRequired,
-  animDuration: PropTypes.number
+  height: PropTypes.number.isRequired
 };
 
 StackChart.defaultProps = {margin: 0};
