@@ -35,7 +35,7 @@ const barStack = (seriesData) => {
   )
 }
 
-class BarChart extends React.Component {
+class StackChart extends React.Component {
 
   scaleColor = d3.scaleSequential(d3.interpolateViridis);
   scaleHeight = d3.scaleLinear();
@@ -125,11 +125,11 @@ class BarChart extends React.Component {
   }
 }
 
-BarChart.defaultProps = {
+StackChart.defaultProps = {
   animDuration: 600
 };
 
-BarChart.propTypes = {
+StackChart.propTypes = {
   data: PropTypes.array.isRequired,
   margin: PropTypes.number,
   width: PropTypes.number.isRequired,
@@ -137,6 +137,6 @@ BarChart.propTypes = {
   animDuration: PropTypes.number
 };
 
-BarChart.defaultProps = {margin: 0};
+StackChart.defaultProps = {margin: 0};
 
-export default BarChart;
+export default StackChart;
