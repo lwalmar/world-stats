@@ -4,12 +4,11 @@ import * as worldCountries from '../Map/data/world_countries.json';
 import StackChart from '../StackChart';
 import './styles.css';
 
-const getCountryProfitData = (countryId) => {
+const getProfitsBreakdownData = (countryId) => {
   const countryProfitsData = worldProfits.default[countryId];
 
   return countryProfitsData
     ? [
-      'profits',
       'dividendsAndBuybacks',
       'netDebtOfHouseholdsAndNISH',
       'netDebtOfGeneralGovernment',
@@ -20,6 +19,14 @@ const getCountryProfitData = (countryId) => {
     ].map((prop) => countryProfitsData.map((countryProfitData) => ({x: countryProfitData.period, y: countryProfitData.data[prop]})))
     : [];
 };
+const getProfitsData = (countryId) => {
+  const countryProfitsData = worldProfits.default[countryId];
+
+  return countryProfitsData
+    ? countryProfitsData.map((countryProfitData) => ({x: countryProfitData.period, y: countryProfitData.data.profits}))
+    : [];
+};
+
 const getCountryName = (countryId) => {
   const countryInfo = worldCountries.default.features.find((item) => item.id === countryId);
   return countryInfo
@@ -30,7 +37,8 @@ const getCountryName = (countryId) => {
 export const CountryInfo = ({
   countryId
 }) => {
-  const [countryProfitData, setcountryProfitData] = useState(getCountryProfitData(countryId));
+  const [profitsBreakdownData, setProfitsBreakdownData] = useState(getProfitsBreakdownData(countryId));
+  const [profitsData, setProfitsData] = useState(getProfitsData(countryId));
   const [countryName, setCountryName] = useState(getCountryName(countryId));
   const [height, setHeight] = useState(0)
   const [width, setWidth] = useState(0)
@@ -51,7 +59,8 @@ export const CountryInfo = ({
         ref={ref}
       >
         <StackChart
-          stackData={countryProfitData}
+          stackData={profitsBreakdownData}
+          lineData={profitsData}
           width={width}
           height={height}
           margin={30}
