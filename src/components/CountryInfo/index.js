@@ -12,8 +12,8 @@ const getProfitsBreakdownData = (countryId) => {
       'dividendsAndBuybacks',
       'netDebtOfHouseholdsAndNISH',
       'netDebtOfGeneralGovernment',
-      'fixedAssetsofDomesticBusiness',
-      'currentAmount',
+      'fixedAssetsOfDomesticBusiness',
+      'currentAccount',
       'otherFactors',
       'discrepancies'
     ].map((prop) => countryProfitsData.map((countryProfitData) => ({x: countryProfitData.period, y: countryProfitData.data[prop]})))

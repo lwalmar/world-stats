@@ -2,331 +2,331 @@
   "RUS": [
     {
       "period": "2003-Year",
-      "data": {"profits": 69, "dividendsAndBuybacks": 21, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsofDomesticBusiness": -38, "currentAmount": 47, "otherFactors": -19, "discrepancies": -31}
+      "data": {"profits": 69, "dividendsAndBuybacks": 21, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsOfDomesticBusiness": -38, "currentAccount": 47, "otherFactors": -19, "discrepancies": -31}
     },
     {
       "period": "2004-Year",
-      "data": {"profits": 69, "dividendsAndBuybacks": 29, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsofDomesticBusiness": 54, "currentAmount": 72, "otherFactors": -22, "discrepancies": -58}
+      "data": {"profits": 69, "dividendsAndBuybacks": 29, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsOfDomesticBusiness": 54, "currentAccount": 72, "otherFactors": -22, "discrepancies": -58}
     },
     {
       "period": "2005-Year",
-      "data": {"profits": 114, "dividendsAndBuybacks": 43, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsofDomesticBusiness": 60, "currentAmount": 105, "otherFactors": -45, "discrepancies": -75}
+      "data": {"profits": 114, "dividendsAndBuybacks": 43, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsOfDomesticBusiness": 60, "currentAccount": 105, "otherFactors": -45, "discrepancies": -75}
     },
     {
       "period": "2006-Year",
-      "data": {"profits": 144, "dividendsAndBuybacks": 72, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsofDomesticBusiness": 88, "currentAmount": 124, "otherFactors": -47, "discrepancies": -111}
+      "data": {"profits": 144, "dividendsAndBuybacks": 72, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsOfDomesticBusiness": 88, "currentAccount": 124, "otherFactors": -47, "discrepancies": -111}
     },
     {
       "period": "2007-Year",
-      "data": {"profits": 179, "dividendsAndBuybacks": 103, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsofDomesticBusiness": 135, "currentAmount": 107, "otherFactors": -70, "discrepancies": -75}
+      "data": {"profits": 179, "dividendsAndBuybacks": 103, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsOfDomesticBusiness": 135, "currentAccount": 107, "otherFactors": -70, "discrepancies": -75}
     },
     {
       "period": "2008-Year",
-      "data": {"profits": 259, "dividendsAndBuybacks": 143, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsofDomesticBusiness": 232, "currentAmount": 157, "otherFactors": -73, "discrepancies": -201}
+      "data": {"profits": 259, "dividendsAndBuybacks": 143, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsOfDomesticBusiness": 232, "currentAccount": 157, "otherFactors": -73, "discrepancies": -201}
     },
     {
       "period": "2009-Year",
-      "data": {"profits": 162, "dividendsAndBuybacks": 107, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsofDomesticBusiness": 83, "currentAmount": 96, "otherFactors": -74, "discrepancies": -49}
+      "data": {"profits": 162, "dividendsAndBuybacks": 107, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsOfDomesticBusiness": 83, "currentAccount": 96, "otherFactors": -74, "discrepancies": -49}
     },
     {
       "period": "2010-Year",
-      "data": {"profits": 199, "dividendsAndBuybacks": 77, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsofDomesticBusiness": 179, "currentAmount": 121, "otherFactors": -73, "discrepancies": -105}
+      "data": {"profits": 199, "dividendsAndBuybacks": 77, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsOfDomesticBusiness": 179, "currentAccount": 121, "otherFactors": -73, "discrepancies": -105}
     },
     {
       "period": "2011-Year",
-      "data": {"profits": 283, "dividendsAndBuybacks": 59, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsofDomesticBusiness": 251, "currentAmount": 163, "otherFactors": -83, "discrepancies": -106}
+      "data": {"profits": 283, "dividendsAndBuybacks": 59, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsOfDomesticBusiness": 251, "currentAccount": 163, "otherFactors": -83, "discrepancies": -106}
     },
     {
       "period": "2012-Year",
-      "data": {"profits": 307, "dividendsAndBuybacks": 39, "netDebtOfHouseholdsAndNISH": -25, "netDebtOfGeneralGovernment": -8, "fixedAssetsofDomesticBusiness": 268, "currentAmount": 145, "otherFactors": -130, "discrepancies": 19}
+      "data": {"profits": 307, "dividendsAndBuybacks": 39, "netDebtOfHouseholdsAndNISH": -25, "netDebtOfGeneralGovernment": -8, "fixedAssetsOfDomesticBusiness": 268, "currentAccount": 145, "otherFactors": -130, "discrepancies": 19}
     },
     {
       "period": "2013-Year",
-      "data": {"profits": 298, "dividendsAndBuybacks": 72, "netDebtOfHouseholdsAndNISH": -23, "netDebtOfGeneralGovernment": 27, "fixedAssetsofDomesticBusiness": 229, "currentAmount": 122, "otherFactors": -153, "discrepancies": 24}
+      "data": {"profits": 298, "dividendsAndBuybacks": 72, "netDebtOfHouseholdsAndNISH": -23, "netDebtOfGeneralGovernment": 27, "fixedAssetsOfDomesticBusiness": 229, "currentAccount": 122, "otherFactors": -153, "discrepancies": 24}
     },
     {
       "period": "2014-Year",
-      "data": {"profits": 253, "dividendsAndBuybacks": 84, "netDebtOfHouseholdsAndNISH": 5, "netDebtOfGeneralGovernment": 22, "fixedAssetsofDomesticBusiness": 172, "currentAmount": 134, "otherFactors": -180, "discrepancies": 16}
+      "data": {"profits": 253, "dividendsAndBuybacks": 84, "netDebtOfHouseholdsAndNISH": 5, "netDebtOfGeneralGovernment": 22, "fixedAssetsOfDomesticBusiness": 172, "currentAccount": 134, "otherFactors": -180, "discrepancies": 16}
     },
     {
       "period": "2015-Year",
-      "data": {"profits": 172, "dividendsAndBuybacks": 68, "netDebtOfHouseholdsAndNISH": -78, "netDebtOfGeneralGovernment": 46, "fixedAssetsofDomesticBusiness": 94, "currentAmount": 111, "otherFactors": -46, "discrepancies": -23}
+      "data": {"profits": 172, "dividendsAndBuybacks": 68, "netDebtOfHouseholdsAndNISH": -78, "netDebtOfGeneralGovernment": 46, "fixedAssetsOfDomesticBusiness": 94, "currentAccount": 111, "otherFactors": -46, "discrepancies": -23}
     },
     {
       "period": "2016-Year",
-      "data": {"profits": 192, "dividendsAndBuybacks": 79, "netDebtOfHouseholdsAndNISH": -55, "netDebtOfGeneralGovernment": 47, "fixedAssetsofDomesticBusiness": 97, "currentAmount": 66, "otherFactors": -66, "discrepancies": 23}
+      "data": {"profits": 192, "dividendsAndBuybacks": 79, "netDebtOfHouseholdsAndNISH": -55, "netDebtOfGeneralGovernment": 47, "fixedAssetsOfDomesticBusiness": 97, "currentAccount": 66, "otherFactors": -66, "discrepancies": 23}
     },
     {
       "period": "2017-Year",
-      "data": {"profits": 193, "dividendsAndBuybacks": 106, "netDebtOfHouseholdsAndNISH": -53, "netDebtOfGeneralGovernment": 23, "fixedAssetsofDomesticBusiness": 148, "currentAmount": 83, "otherFactors": -101, "discrepancies": -14}
+      "data": {"profits": 193, "dividendsAndBuybacks": 106, "netDebtOfHouseholdsAndNISH": -53, "netDebtOfGeneralGovernment": 23, "fixedAssetsOfDomesticBusiness": 148, "currentAccount": 83, "otherFactors": -101, "discrepancies": -14}
     },
     {
       "period": "2018-Year",
-      "data": {"profits": 249, "dividendsAndBuybacks": 115, "netDebtOfHouseholdsAndNISH": -29, "netDebtOfGeneralGovernment": -48, "fixedAssetsofDomesticBusiness": 138, "currentAmount": 164, "otherFactors": -93, "discrepancies": 2
+      "data": {"profits": 249, "dividendsAndBuybacks": 115, "netDebtOfHouseholdsAndNISH": -29, "netDebtOfGeneralGovernment": -48, "fixedAssetsOfDomesticBusiness": 138, "currentAccount": 164, "otherFactors": -93, "discrepancies": 2
       }}
   ],
   "USA": [
     {
       "period": "2003-Year",
-      "data": {"profits": 100, "dividendsAndBuybacks": 21, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsofDomesticBusiness": -38, "currentAmount": 47, "otherFactors": -19, "discrepancies": -31}
+      "data": {"profits": 100, "dividendsAndBuybacks": 21, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsOfDomesticBusiness": -38, "currentAccount": 47, "otherFactors": -19, "discrepancies": -31}
     },
     {
       "period": "2004-Year",
-      "data": {"profits": 200, "dividendsAndBuybacks": 29, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsofDomesticBusiness": 54, "currentAmount": 72, "otherFactors": -22, "discrepancies": -58}
+      "data": {"profits": 200, "dividendsAndBuybacks": 29, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsOfDomesticBusiness": 54, "currentAccount": 72, "otherFactors": -22, "discrepancies": -58}
     },
     {
       "period": "2005-Year",
-      "data": {"profits": 340, "dividendsAndBuybacks": 43, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsofDomesticBusiness": 60, "currentAmount": 105, "otherFactors": -45, "discrepancies": -75}
+      "data": {"profits": 340, "dividendsAndBuybacks": 43, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsOfDomesticBusiness": 60, "currentAccount": 105, "otherFactors": -45, "discrepancies": -75}
     },
     {
       "period": "2006-Year",
-      "data": {"profits": 156, "dividendsAndBuybacks": 72, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsofDomesticBusiness": 88, "currentAmount": 124, "otherFactors": -47, "discrepancies": -111}
+      "data": {"profits": 156, "dividendsAndBuybacks": 72, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsOfDomesticBusiness": 88, "currentAccount": 124, "otherFactors": -47, "discrepancies": -111}
     },
     {
       "period": "2007-Year",
-      "data": {"profits": 185, "dividendsAndBuybacks": 103, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsofDomesticBusiness": 135, "currentAmount": 107, "otherFactors": -70, "discrepancies": -75}
+      "data": {"profits": 185, "dividendsAndBuybacks": 103, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsOfDomesticBusiness": 135, "currentAccount": 107, "otherFactors": -70, "discrepancies": -75}
     },
     {
       "period": "2008-Year",
-      "data": {"profits": 259, "dividendsAndBuybacks": 143, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsofDomesticBusiness": 232, "currentAmount": 157, "otherFactors": -73, "discrepancies": -201}
+      "data": {"profits": 259, "dividendsAndBuybacks": 143, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsOfDomesticBusiness": 232, "currentAccount": 157, "otherFactors": -73, "discrepancies": -201}
     },
     {
       "period": "2009-Year",
-      "data": {"profits": 467, "dividendsAndBuybacks": 107, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsofDomesticBusiness": 83, "currentAmount": 96, "otherFactors": -74, "discrepancies": -49}
+      "data": {"profits": 467, "dividendsAndBuybacks": 107, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsOfDomesticBusiness": 83, "currentAccount": 96, "otherFactors": -74, "discrepancies": -49}
     },
     {
       "period": "2010-Year",
-      "data": {"profits": 562, "dividendsAndBuybacks": 77, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsofDomesticBusiness": 179, "currentAmount": 121, "otherFactors": -73, "discrepancies": -105}
+      "data": {"profits": 562, "dividendsAndBuybacks": 77, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsOfDomesticBusiness": 179, "currentAccount": 121, "otherFactors": -73, "discrepancies": -105}
     },
     {
       "period": "2011-Year",
-      "data": {"profits": 354, "dividendsAndBuybacks": 59, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsofDomesticBusiness": 251, "currentAmount": 163, "otherFactors": -83, "discrepancies": -106}
+      "data": {"profits": 354, "dividendsAndBuybacks": 59, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsOfDomesticBusiness": 251, "currentAccount": 163, "otherFactors": -83, "discrepancies": -106}
     },
     {
       "period": "2012-Year",
-      "data": {"profits": 452, "dividendsAndBuybacks": 39, "netDebtOfHouseholdsAndNISH": -25, "netDebtOfGeneralGovernment": -8, "fixedAssetsofDomesticBusiness": 268, "currentAmount": 145, "otherFactors": -130, "discrepancies": 19}
+      "data": {"profits": 452, "dividendsAndBuybacks": 39, "netDebtOfHouseholdsAndNISH": -25, "netDebtOfGeneralGovernment": -8, "fixedAssetsOfDomesticBusiness": 268, "currentAccount": 145, "otherFactors": -130, "discrepancies": 19}
     },
     {
       "period": "2013-Year",
-      "data": {"profits": 245, "dividendsAndBuybacks": 72, "netDebtOfHouseholdsAndNISH": -23, "netDebtOfGeneralGovernment": 27, "fixedAssetsofDomesticBusiness": 229, "currentAmount": 122, "otherFactors": -153, "discrepancies": 24}
+      "data": {"profits": 245, "dividendsAndBuybacks": 72, "netDebtOfHouseholdsAndNISH": -23, "netDebtOfGeneralGovernment": 27, "fixedAssetsOfDomesticBusiness": 229, "currentAccount": 122, "otherFactors": -153, "discrepancies": 24}
     },
     {
       "period": "2014-Year",
-      "data": {"profits": 423, "dividendsAndBuybacks": 84, "netDebtOfHouseholdsAndNISH": 5, "netDebtOfGeneralGovernment": 22, "fixedAssetsofDomesticBusiness": 172, "currentAmount": 134, "otherFactors": -180, "discrepancies": 16}
+      "data": {"profits": 423, "dividendsAndBuybacks": 84, "netDebtOfHouseholdsAndNISH": 5, "netDebtOfGeneralGovernment": 22, "fixedAssetsOfDomesticBusiness": 172, "currentAccount": 134, "otherFactors": -180, "discrepancies": 16}
     },
     {
       "period": "2015-Year",
-      "data": {"profits": 234, "dividendsAndBuybacks": 68, "netDebtOfHouseholdsAndNISH": -78, "netDebtOfGeneralGovernment": 46, "fixedAssetsofDomesticBusiness": 94, "currentAmount": 111, "otherFactors": -46, "discrepancies": -23}
+      "data": {"profits": 234, "dividendsAndBuybacks": 68, "netDebtOfHouseholdsAndNISH": -78, "netDebtOfGeneralGovernment": 46, "fixedAssetsOfDomesticBusiness": 94, "currentAccount": 111, "otherFactors": -46, "discrepancies": -23}
     },
     {
       "period": "2016-Year",
-      "data": {"profits": 192, "dividendsAndBuybacks": 79, "netDebtOfHouseholdsAndNISH": -55, "netDebtOfGeneralGovernment": 47, "fixedAssetsofDomesticBusiness": 97, "currentAmount": 66, "otherFactors": -66, "discrepancies": 23}
+      "data": {"profits": 192, "dividendsAndBuybacks": 79, "netDebtOfHouseholdsAndNISH": -55, "netDebtOfGeneralGovernment": 47, "fixedAssetsOfDomesticBusiness": 97, "currentAccount": 66, "otherFactors": -66, "discrepancies": 23}
     },
     {
       "period": "2017-Year",
-      "data": {"profits": 345, "dividendsAndBuybacks": 106, "netDebtOfHouseholdsAndNISH": -53, "netDebtOfGeneralGovernment": 23, "fixedAssetsofDomesticBusiness": 148, "currentAmount": 83, "otherFactors": -101, "discrepancies": -14}
+      "data": {"profits": 345, "dividendsAndBuybacks": 106, "netDebtOfHouseholdsAndNISH": -53, "netDebtOfGeneralGovernment": 23, "fixedAssetsOfDomesticBusiness": 148, "currentAccount": 83, "otherFactors": -101, "discrepancies": -14}
     },
     {
       "period": "2018-Year",
-      "data": {"profits": 504, "dividendsAndBuybacks": 115, "netDebtOfHouseholdsAndNISH": -29, "netDebtOfGeneralGovernment": -48, "fixedAssetsofDomesticBusiness": 138, "currentAmount": 164, "otherFactors": -93, "discrepancies": 2
+      "data": {"profits": 504, "dividendsAndBuybacks": 115, "netDebtOfHouseholdsAndNISH": -29, "netDebtOfGeneralGovernment": -48, "fixedAssetsOfDomesticBusiness": 138, "currentAccount": 164, "otherFactors": -93, "discrepancies": 2
       }}
   ],
   "CHN": [
     {
       "period": "2003-Year",
-      "data": {"profits": 69, "dividendsAndBuybacks": 21, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsofDomesticBusiness": -38, "currentAmount": 47, "otherFactors": -19, "discrepancies": -31}
+      "data": {"profits": 69, "dividendsAndBuybacks": 21, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsOfDomesticBusiness": -38, "currentAccount": 47, "otherFactors": -19, "discrepancies": -31}
     },
     {
       "period": "2004-Year",
-      "data": {"profits": 69, "dividendsAndBuybacks": 29, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsofDomesticBusiness": 54, "currentAmount": 72, "otherFactors": -22, "discrepancies": -58}
+      "data": {"profits": 69, "dividendsAndBuybacks": 29, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsOfDomesticBusiness": 54, "currentAccount": 72, "otherFactors": -22, "discrepancies": -58}
     },
     {
       "period": "2005-Year",
-      "data": {"profits": 114, "dividendsAndBuybacks": 43, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsofDomesticBusiness": 60, "currentAmount": 105, "otherFactors": -45, "discrepancies": -75}
+      "data": {"profits": 114, "dividendsAndBuybacks": 43, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsOfDomesticBusiness": 60, "currentAccount": 105, "otherFactors": -45, "discrepancies": -75}
     },
     {
       "period": "2006-Year",
-      "data": {"profits": 144, "dividendsAndBuybacks": 72, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsofDomesticBusiness": 88, "currentAmount": 124, "otherFactors": -47, "discrepancies": -111}
+      "data": {"profits": 144, "dividendsAndBuybacks": 72, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsOfDomesticBusiness": 88, "currentAccount": 124, "otherFactors": -47, "discrepancies": -111}
     },
     {
       "period": "2007-Year",
-      "data": {"profits": 179, "dividendsAndBuybacks": 103, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsofDomesticBusiness": 135, "currentAmount": 107, "otherFactors": -70, "discrepancies": -75}
+      "data": {"profits": 179, "dividendsAndBuybacks": 103, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsOfDomesticBusiness": 135, "currentAccount": 107, "otherFactors": -70, "discrepancies": -75}
     },
     {
       "period": "2008-Year",
-      "data": {"profits": 259, "dividendsAndBuybacks": 143, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsofDomesticBusiness": 232, "currentAmount": 157, "otherFactors": -73, "discrepancies": -201}
+      "data": {"profits": 259, "dividendsAndBuybacks": 143, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsOfDomesticBusiness": 232, "currentAccount": 157, "otherFactors": -73, "discrepancies": -201}
     },
     {
       "period": "2009-Year",
-      "data": {"profits": 162, "dividendsAndBuybacks": 107, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsofDomesticBusiness": 83, "currentAmount": 96, "otherFactors": -74, "discrepancies": -49}
+      "data": {"profits": 162, "dividendsAndBuybacks": 107, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsOfDomesticBusiness": 83, "currentAccount": 96, "otherFactors": -74, "discrepancies": -49}
     },
     {
       "period": "2010-Year",
-      "data": {"profits": 199, "dividendsAndBuybacks": 77, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsofDomesticBusiness": 179, "currentAmount": 121, "otherFactors": -73, "discrepancies": -105}
+      "data": {"profits": 199, "dividendsAndBuybacks": 77, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsOfDomesticBusiness": 179, "currentAccount": 121, "otherFactors": -73, "discrepancies": -105}
     },
     {
       "period": "2011-Year",
-      "data": {"profits": 283, "dividendsAndBuybacks": 59, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsofDomesticBusiness": 251, "currentAmount": 163, "otherFactors": -83, "discrepancies": -106}
+      "data": {"profits": 283, "dividendsAndBuybacks": 59, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsOfDomesticBusiness": 251, "currentAccount": 163, "otherFactors": -83, "discrepancies": -106}
     },
     {
       "period": "2012-Year",
-      "data": {"profits": 307, "dividendsAndBuybacks": 39, "netDebtOfHouseholdsAndNISH": -25, "netDebtOfGeneralGovernment": -8, "fixedAssetsofDomesticBusiness": 268, "currentAmount": 145, "otherFactors": -130, "discrepancies": 19}
+      "data": {"profits": 307, "dividendsAndBuybacks": 39, "netDebtOfHouseholdsAndNISH": -25, "netDebtOfGeneralGovernment": -8, "fixedAssetsOfDomesticBusiness": 268, "currentAccount": 145, "otherFactors": -130, "discrepancies": 19}
     },
     {
       "period": "2013-Year",
-      "data": {"profits": 298, "dividendsAndBuybacks": 72, "netDebtOfHouseholdsAndNISH": -23, "netDebtOfGeneralGovernment": 27, "fixedAssetsofDomesticBusiness": 229, "currentAmount": 122, "otherFactors": -153, "discrepancies": 24}
+      "data": {"profits": 298, "dividendsAndBuybacks": 72, "netDebtOfHouseholdsAndNISH": -23, "netDebtOfGeneralGovernment": 27, "fixedAssetsOfDomesticBusiness": 229, "currentAccount": 122, "otherFactors": -153, "discrepancies": 24}
     },
     {
       "period": "2014-Year",
-      "data": {"profits": 253, "dividendsAndBuybacks": 84, "netDebtOfHouseholdsAndNISH": 5, "netDebtOfGeneralGovernment": 22, "fixedAssetsofDomesticBusiness": 172, "currentAmount": 134, "otherFactors": -180, "discrepancies": 16}
+      "data": {"profits": 253, "dividendsAndBuybacks": 84, "netDebtOfHouseholdsAndNISH": 5, "netDebtOfGeneralGovernment": 22, "fixedAssetsOfDomesticBusiness": 172, "currentAccount": 134, "otherFactors": -180, "discrepancies": 16}
     },
     {
       "period": "2015-Year",
-      "data": {"profits": 172, "dividendsAndBuybacks": 68, "netDebtOfHouseholdsAndNISH": -78, "netDebtOfGeneralGovernment": 46, "fixedAssetsofDomesticBusiness": 94, "currentAmount": 111, "otherFactors": -46, "discrepancies": -23}
+      "data": {"profits": 172, "dividendsAndBuybacks": 68, "netDebtOfHouseholdsAndNISH": -78, "netDebtOfGeneralGovernment": 46, "fixedAssetsOfDomesticBusiness": 94, "currentAccount": 111, "otherFactors": -46, "discrepancies": -23}
     },
     {
       "period": "2016-Year",
-      "data": {"profits": 192, "dividendsAndBuybacks": 79, "netDebtOfHouseholdsAndNISH": -55, "netDebtOfGeneralGovernment": 47, "fixedAssetsofDomesticBusiness": 97, "currentAmount": 66, "otherFactors": -66, "discrepancies": 23}
+      "data": {"profits": 192, "dividendsAndBuybacks": 79, "netDebtOfHouseholdsAndNISH": -55, "netDebtOfGeneralGovernment": 47, "fixedAssetsOfDomesticBusiness": 97, "currentAccount": 66, "otherFactors": -66, "discrepancies": 23}
     },
     {
       "period": "2017-Year",
-      "data": {"profits": 193, "dividendsAndBuybacks": 106, "netDebtOfHouseholdsAndNISH": -53, "netDebtOfGeneralGovernment": 23, "fixedAssetsofDomesticBusiness": 148, "currentAmount": 83, "otherFactors": -101, "discrepancies": -14}
+      "data": {"profits": 193, "dividendsAndBuybacks": 106, "netDebtOfHouseholdsAndNISH": -53, "netDebtOfGeneralGovernment": 23, "fixedAssetsOfDomesticBusiness": 148, "currentAccount": 83, "otherFactors": -101, "discrepancies": -14}
     },
     {
       "period": "2018-Year",
-      "data": {"profits": 492, "dividendsAndBuybacks": 115, "netDebtOfHouseholdsAndNISH": -29, "netDebtOfGeneralGovernment": -48, "fixedAssetsofDomesticBusiness": 138, "currentAmount": 164, "otherFactors": -93, "discrepancies": 2
+      "data": {"profits": 492, "dividendsAndBuybacks": 115, "netDebtOfHouseholdsAndNISH": -29, "netDebtOfGeneralGovernment": -48, "fixedAssetsOfDomesticBusiness": 138, "currentAccount": 164, "otherFactors": -93, "discrepancies": 2
       }}
   ],
   "FRA": [
     {
       "period": "2003-Year",
-      "data": {"profits": 69, "dividendsAndBuybacks": 21, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsofDomesticBusiness": -38, "currentAmount": 47, "otherFactors": -19, "discrepancies": -31}
+      "data": {"profits": 69, "dividendsAndBuybacks": 21, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsOfDomesticBusiness": -38, "currentAccount": 47, "otherFactors": -19, "discrepancies": -31}
     },
     {
       "period": "2004-Year",
-      "data": {"profits": 69, "dividendsAndBuybacks": 29, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsofDomesticBusiness": 54, "currentAmount": 72, "otherFactors": -22, "discrepancies": -58}
+      "data": {"profits": 69, "dividendsAndBuybacks": 29, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsOfDomesticBusiness": 54, "currentAccount": 72, "otherFactors": -22, "discrepancies": -58}
     },
     {
       "period": "2005-Year",
-      "data": {"profits": 114, "dividendsAndBuybacks": 43, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsofDomesticBusiness": 60, "currentAmount": 105, "otherFactors": -45, "discrepancies": -75}
+      "data": {"profits": 114, "dividendsAndBuybacks": 43, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsOfDomesticBusiness": 60, "currentAccount": 105, "otherFactors": -45, "discrepancies": -75}
     },
     {
       "period": "2006-Year",
-      "data": {"profits": 144, "dividendsAndBuybacks": 72, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsofDomesticBusiness": 88, "currentAmount": 124, "otherFactors": -47, "discrepancies": -111}
+      "data": {"profits": 144, "dividendsAndBuybacks": 72, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsOfDomesticBusiness": 88, "currentAccount": 124, "otherFactors": -47, "discrepancies": -111}
     },
     {
       "period": "2007-Year",
-      "data": {"profits": 179, "dividendsAndBuybacks": 103, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsofDomesticBusiness": 135, "currentAmount": 107, "otherFactors": -70, "discrepancies": -75}
+      "data": {"profits": 179, "dividendsAndBuybacks": 103, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsOfDomesticBusiness": 135, "currentAccount": 107, "otherFactors": -70, "discrepancies": -75}
     },
     {
       "period": "2008-Year",
-      "data": {"profits": 259, "dividendsAndBuybacks": 143, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsofDomesticBusiness": 232, "currentAmount": 157, "otherFactors": -73, "discrepancies": -201}
+      "data": {"profits": 259, "dividendsAndBuybacks": 143, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsOfDomesticBusiness": 232, "currentAccount": 157, "otherFactors": -73, "discrepancies": -201}
     },
     {
       "period": "2009-Year",
-      "data": {"profits": 162, "dividendsAndBuybacks": 107, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsofDomesticBusiness": 83, "currentAmount": 96, "otherFactors": -74, "discrepancies": -49}
+      "data": {"profits": 162, "dividendsAndBuybacks": 107, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsOfDomesticBusiness": 83, "currentAccount": 96, "otherFactors": -74, "discrepancies": -49}
     },
     {
       "period": "2010-Year",
-      "data": {"profits": 199, "dividendsAndBuybacks": 77, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsofDomesticBusiness": 179, "currentAmount": 121, "otherFactors": -73, "discrepancies": -105}
+      "data": {"profits": 199, "dividendsAndBuybacks": 77, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsOfDomesticBusiness": 179, "currentAccount": 121, "otherFactors": -73, "discrepancies": -105}
     },
     {
       "period": "2011-Year",
-      "data": {"profits": 283, "dividendsAndBuybacks": 59, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsofDomesticBusiness": 251, "currentAmount": 163, "otherFactors": -83, "discrepancies": -106}
+      "data": {"profits": 283, "dividendsAndBuybacks": 59, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsOfDomesticBusiness": 251, "currentAccount": 163, "otherFactors": -83, "discrepancies": -106}
     },
     {
       "period": "2012-Year",
-      "data": {"profits": 307, "dividendsAndBuybacks": 39, "netDebtOfHouseholdsAndNISH": -25, "netDebtOfGeneralGovernment": -8, "fixedAssetsofDomesticBusiness": 268, "currentAmount": 145, "otherFactors": -130, "discrepancies": 19}
+      "data": {"profits": 307, "dividendsAndBuybacks": 39, "netDebtOfHouseholdsAndNISH": -25, "netDebtOfGeneralGovernment": -8, "fixedAssetsOfDomesticBusiness": 268, "currentAccount": 145, "otherFactors": -130, "discrepancies": 19}
     },
     {
       "period": "2013-Year",
-      "data": {"profits": 298, "dividendsAndBuybacks": 72, "netDebtOfHouseholdsAndNISH": -23, "netDebtOfGeneralGovernment": 27, "fixedAssetsofDomesticBusiness": 229, "currentAmount": 122, "otherFactors": -153, "discrepancies": 24}
+      "data": {"profits": 298, "dividendsAndBuybacks": 72, "netDebtOfHouseholdsAndNISH": -23, "netDebtOfGeneralGovernment": 27, "fixedAssetsOfDomesticBusiness": 229, "currentAccount": 122, "otherFactors": -153, "discrepancies": 24}
     },
     {
       "period": "2014-Year",
-      "data": {"profits": 253, "dividendsAndBuybacks": 84, "netDebtOfHouseholdsAndNISH": 5, "netDebtOfGeneralGovernment": 22, "fixedAssetsofDomesticBusiness": 172, "currentAmount": 134, "otherFactors": -180, "discrepancies": 16}
+      "data": {"profits": 253, "dividendsAndBuybacks": 84, "netDebtOfHouseholdsAndNISH": 5, "netDebtOfGeneralGovernment": 22, "fixedAssetsOfDomesticBusiness": 172, "currentAccount": 134, "otherFactors": -180, "discrepancies": 16}
     },
     {
       "period": "2015-Year",
-      "data": {"profits": 172, "dividendsAndBuybacks": 68, "netDebtOfHouseholdsAndNISH": -78, "netDebtOfGeneralGovernment": 46, "fixedAssetsofDomesticBusiness": 94, "currentAmount": 111, "otherFactors": -46, "discrepancies": -23}
+      "data": {"profits": 172, "dividendsAndBuybacks": 68, "netDebtOfHouseholdsAndNISH": -78, "netDebtOfGeneralGovernment": 46, "fixedAssetsOfDomesticBusiness": 94, "currentAccount": 111, "otherFactors": -46, "discrepancies": -23}
     },
     {
       "period": "2016-Year",
-      "data": {"profits": 192, "dividendsAndBuybacks": 79, "netDebtOfHouseholdsAndNISH": -55, "netDebtOfGeneralGovernment": 47, "fixedAssetsofDomesticBusiness": 97, "currentAmount": 66, "otherFactors": -66, "discrepancies": 23}
+      "data": {"profits": 192, "dividendsAndBuybacks": 79, "netDebtOfHouseholdsAndNISH": -55, "netDebtOfGeneralGovernment": 47, "fixedAssetsOfDomesticBusiness": 97, "currentAccount": 66, "otherFactors": -66, "discrepancies": 23}
     },
     {
       "period": "2017-Year",
-      "data": {"profits": 193, "dividendsAndBuybacks": 106, "netDebtOfHouseholdsAndNISH": -53, "netDebtOfGeneralGovernment": 23, "fixedAssetsofDomesticBusiness": 148, "currentAmount": 83, "otherFactors": -101, "discrepancies": -14}
+      "data": {"profits": 193, "dividendsAndBuybacks": 106, "netDebtOfHouseholdsAndNISH": -53, "netDebtOfGeneralGovernment": 23, "fixedAssetsOfDomesticBusiness": 148, "currentAccount": 83, "otherFactors": -101, "discrepancies": -14}
     },
     {
       "period": "2018-Year",
-      "data": {"profits": 394, "dividendsAndBuybacks": 115, "netDebtOfHouseholdsAndNISH": -29, "netDebtOfGeneralGovernment": -48, "fixedAssetsofDomesticBusiness": 138, "currentAmount": 164, "otherFactors": -93, "discrepancies": 2
+      "data": {"profits": 394, "dividendsAndBuybacks": 115, "netDebtOfHouseholdsAndNISH": -29, "netDebtOfGeneralGovernment": -48, "fixedAssetsOfDomesticBusiness": 138, "currentAccount": 164, "otherFactors": -93, "discrepancies": 2
       }}
   ],
   "TUR": [
     {
       "period": "2003-Year",
-      "data": {"profits": 69, "dividendsAndBuybacks": 21, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsofDomesticBusiness": -38, "currentAmount": 47, "otherFactors": -19, "discrepancies": -31}
+      "data": {"profits": 69, "dividendsAndBuybacks": 21, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsOfDomesticBusiness": -38, "currentAccount": 47, "otherFactors": -19, "discrepancies": -31}
     },
     {
       "period": "2004-Year",
-      "data": {"profits": 69, "dividendsAndBuybacks": 29, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsofDomesticBusiness": 54, "currentAmount": 72, "otherFactors": -22, "discrepancies": -58}
+      "data": {"profits": 69, "dividendsAndBuybacks": 29, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsOfDomesticBusiness": 54, "currentAccount": 72, "otherFactors": -22, "discrepancies": -58}
     },
     {
       "period": "2005-Year",
-      "data": {"profits": 114, "dividendsAndBuybacks": 43, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsofDomesticBusiness": 60, "currentAmount": 105, "otherFactors": -45, "discrepancies": -75}
+      "data": {"profits": 114, "dividendsAndBuybacks": 43, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsOfDomesticBusiness": 60, "currentAccount": 105, "otherFactors": -45, "discrepancies": -75}
     },
     {
       "period": "2006-Year",
-      "data": {"profits": 144, "dividendsAndBuybacks": 72, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsofDomesticBusiness": 88, "currentAmount": 124, "otherFactors": -47, "discrepancies": -111}
+      "data": {"profits": 144, "dividendsAndBuybacks": 72, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsOfDomesticBusiness": 88, "currentAccount": 124, "otherFactors": -47, "discrepancies": -111}
     },
     {
       "period": "2007-Year",
-      "data": {"profits": 179, "dividendsAndBuybacks": 103, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsofDomesticBusiness": 135, "currentAmount": 107, "otherFactors": -70, "discrepancies": -75}
+      "data": {"profits": 179, "dividendsAndBuybacks": 103, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsOfDomesticBusiness": 135, "currentAccount": 107, "otherFactors": -70, "discrepancies": -75}
     },
     {
       "period": "2008-Year",
-      "data": {"profits": 259, "dividendsAndBuybacks": 143, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsofDomesticBusiness": 232, "currentAmount": 157, "otherFactors": -73, "discrepancies": -201}
+      "data": {"profits": 259, "dividendsAndBuybacks": 143, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsOfDomesticBusiness": 232, "currentAccount": 157, "otherFactors": -73, "discrepancies": -201}
     },
     {
       "period": "2009-Year",
-      "data": {"profits": 162, "dividendsAndBuybacks": 107, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsofDomesticBusiness": 83, "currentAmount": 96, "otherFactors": -74, "discrepancies": -49}
+      "data": {"profits": 162, "dividendsAndBuybacks": 107, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsOfDomesticBusiness": 83, "currentAccount": 96, "otherFactors": -74, "discrepancies": -49}
     },
     {
       "period": "2010-Year",
-      "data": {"profits": 199, "dividendsAndBuybacks": 77, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsofDomesticBusiness": 179, "currentAmount": 121, "otherFactors": -73, "discrepancies": -105}
+      "data": {"profits": 199, "dividendsAndBuybacks": 77, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsOfDomesticBusiness": 179, "currentAccount": 121, "otherFactors": -73, "discrepancies": -105}
     },
     {
       "period": "2011-Year",
-      "data": {"profits": 283, "dividendsAndBuybacks": 59, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsofDomesticBusiness": 251, "currentAmount": 163, "otherFactors": -83, "discrepancies": -106}
+      "data": {"profits": 283, "dividendsAndBuybacks": 59, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsOfDomesticBusiness": 251, "currentAccount": 163, "otherFactors": -83, "discrepancies": -106}
     },
     {
       "period": "2012-Year",
-      "data": {"profits": 307, "dividendsAndBuybacks": 39, "netDebtOfHouseholdsAndNISH": -25, "netDebtOfGeneralGovernment": -8, "fixedAssetsofDomesticBusiness": 268, "currentAmount": 145, "otherFactors": -130, "discrepancies": 19}
+      "data": {"profits": 307, "dividendsAndBuybacks": 39, "netDebtOfHouseholdsAndNISH": -25, "netDebtOfGeneralGovernment": -8, "fixedAssetsOfDomesticBusiness": 268, "currentAccount": 145, "otherFactors": -130, "discrepancies": 19}
     },
     {
       "period": "2013-Year",
-      "data": {"profits": 298, "dividendsAndBuybacks": 72, "netDebtOfHouseholdsAndNISH": -23, "netDebtOfGeneralGovernment": 27, "fixedAssetsofDomesticBusiness": 229, "currentAmount": 122, "otherFactors": -153, "discrepancies": 24}
+      "data": {"profits": 298, "dividendsAndBuybacks": 72, "netDebtOfHouseholdsAndNISH": -23, "netDebtOfGeneralGovernment": 27, "fixedAssetsOfDomesticBusiness": 229, "currentAccount": 122, "otherFactors": -153, "discrepancies": 24}
     },
     {
       "period": "2014-Year",
-      "data": {"profits": 253, "dividendsAndBuybacks": 84, "netDebtOfHouseholdsAndNISH": 5, "netDebtOfGeneralGovernment": 22, "fixedAssetsofDomesticBusiness": 172, "currentAmount": 134, "otherFactors": -180, "discrepancies": 16}
+      "data": {"profits": 253, "dividendsAndBuybacks": 84, "netDebtOfHouseholdsAndNISH": 5, "netDebtOfGeneralGovernment": 22, "fixedAssetsOfDomesticBusiness": 172, "currentAccount": 134, "otherFactors": -180, "discrepancies": 16}
     },
     {
       "period": "2015-Year",
-      "data": {"profits": 172, "dividendsAndBuybacks": 68, "netDebtOfHouseholdsAndNISH": -78, "netDebtOfGeneralGovernment": 46, "fixedAssetsofDomesticBusiness": 94, "currentAmount": 111, "otherFactors": -46, "discrepancies": -23}
+      "data": {"profits": 172, "dividendsAndBuybacks": 68, "netDebtOfHouseholdsAndNISH": -78, "netDebtOfGeneralGovernment": 46, "fixedAssetsOfDomesticBusiness": 94, "currentAccount": 111, "otherFactors": -46, "discrepancies": -23}
     },
     {
       "period": "2016-Year",
-      "data": {"profits": 192, "dividendsAndBuybacks": 79, "netDebtOfHouseholdsAndNISH": -55, "netDebtOfGeneralGovernment": 47, "fixedAssetsofDomesticBusiness": 97, "currentAmount": 66, "otherFactors": -66, "discrepancies": 23}
+      "data": {"profits": 192, "dividendsAndBuybacks": 79, "netDebtOfHouseholdsAndNISH": -55, "netDebtOfGeneralGovernment": 47, "fixedAssetsOfDomesticBusiness": 97, "currentAccount": 66, "otherFactors": -66, "discrepancies": 23}
     },
     {
       "period": "2017-Year",
-      "data": {"profits": 193, "dividendsAndBuybacks": 106, "netDebtOfHouseholdsAndNISH": -53, "netDebtOfGeneralGovernment": 23, "fixedAssetsofDomesticBusiness": 148, "currentAmount": 83, "otherFactors": -101, "discrepancies": -14}
+      "data": {"profits": 193, "dividendsAndBuybacks": 106, "netDebtOfHouseholdsAndNISH": -53, "netDebtOfGeneralGovernment": 23, "fixedAssetsOfDomesticBusiness": 148, "currentAccount": 83, "otherFactors": -101, "discrepancies": -14}
     },
     {
       "period": "2018-Year",
-      "data": {"profits": 123, "dividendsAndBuybacks": 115, "netDebtOfHouseholdsAndNISH": -29, "netDebtOfGeneralGovernment": -48, "fixedAssetsofDomesticBusiness": 138, "currentAmount": 164, "otherFactors": -93, "discrepancies": 2
+      "data": {"profits": 123, "dividendsAndBuybacks": 115, "netDebtOfHouseholdsAndNISH": -29, "netDebtOfGeneralGovernment": -48, "fixedAssetsOfDomesticBusiness": 138, "currentAccount": 164, "otherFactors": -93, "discrepancies": 2
     }}
   ]
 }
