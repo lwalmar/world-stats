@@ -51,7 +51,7 @@ export const CountryInfo = ({
         ref={ref}
       >
         <StackChart
-          data={countryProfitData}
+          stackData={countryProfitData}
           width={width}
           height={height}
           margin={30}

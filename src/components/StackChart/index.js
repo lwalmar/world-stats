@@ -50,18 +50,18 @@ class StackChart extends React.Component {
   }
 
   updateChart() {
-    const { data, width, height, animDuration, margin} = this.props;
-    if (width ===0 || height === 0 || data.length === 0) {
+    const { stackData, width, height, animDuration, margin} = this.props;
+    if (width ===0 || height === 0 || stackData.length === 0) {
       return;
     }
     this.updateScales();
 
     const svg = d3.select(this.viz);
 
-    barStack(data);
+    barStack(stackData);
     const series = svg
       .selectAll(".series")
-      .data(data);
+      .data(stackData);
 
     series.exit()
       .transition().duration(animDuration)
@@ -100,18 +100,18 @@ class StackChart extends React.Component {
   }
 
   updateScales() {
-    const { data, width, height, margin } = this.props;
-    this.scaleColor.domain([0, data.length]);
-    if (data.length === 0) {
+    const { stackData, width, height, margin } = this.props;
+    this.scaleColor.domain([0, stackData.length]);
+    if (stackData.length === 0) {
       return;
     }
     this.scaleWidth
-      .domain(data[0].map((d) => d.x))
+      .domain(stackData[0].map((d) => d.x))
       .range([margin, width - margin]);
 
-    barStack(data);
+    barStack(stackData);
     this.scaleHeight
-      .domain(data.extent)
+      .domain(stackData.extent)
       .range([ height - margin,0 + margin]);
   }
 
@@ -130,7 +130,7 @@ StackChart.defaultProps = {
 };
 
 StackChart.propTypes = {
-  data: PropTypes.array.isRequired,
+  stackData: PropTypes.array.isRequired,
   margin: PropTypes.number,
   width: PropTypes.number.isRequired,
   height: PropTypes.number.isRequired,
