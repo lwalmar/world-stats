@@ -57,7 +57,7 @@ class BarChart extends React.Component {
 
     const svg = d3.select(this.viz);
 
-    const seriesData = barStack(data);
+    barStack(data);
     const series = svg
       .selectAll(".series")
       .data(data);
@@ -87,7 +87,7 @@ class BarChart extends React.Component {
       .scale(this.scaleHeight)
       .tickSize(6, 0);
 
-    svg.append("g").attr("class","axis x").attr("transform","translate (0 "+this.scaleHeight(0)+")").call(xAxis)
+    svg.append("g").attr("class","axis x").attr("transform","translate (0 "+(height - margin)+")").call(xAxis)
     svg.append("g").attr("class","axis y").attr("transform","translate ("+margin+" 0)").call(yAxis)
   }
 
