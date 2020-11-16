@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import * as d3 from "d3";
+import './styles.css';
 
 const barStack = (seriesData) => {
   if (seriesData.length === 0) {
@@ -89,6 +90,13 @@ class BarChart extends React.Component {
 
     svg.append("g").attr("class","axis x").attr("transform","translate (0 "+(height - margin)+")").call(xAxis)
     svg.append("g").attr("class","axis y").attr("transform","translate ("+margin+" 0)").call(yAxis)
+    const dividingLine = d3.line();
+    svg.append("path").attr("class","barChart_dividingLine").attr("d", dividingLine(
+      [
+        [margin+1, this.scaleHeight(0)],
+        [width, this.scaleHeight(0)]
+      ]
+    ))
   }
 
   updateScales() {
