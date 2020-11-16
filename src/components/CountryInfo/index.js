@@ -5,9 +5,9 @@ import StackChart from '../BarChart';
 import './styles.css';
 
 const getCountryProfitData = (countryId) => {
-  const countryProfits = worldProfits.default[countryId];
+  const countryProfitsData = worldProfits.default[countryId];
 
-  return countryProfits
+  return countryProfitsData
     ? [
       'profits',
       'dividendsAndBuybacks',
@@ -17,7 +17,7 @@ const getCountryProfitData = (countryId) => {
       'currentAmount',
       'otherFactors',
       'discrepancies'
-    ].map((prop) => countryProfits.map((countryProfit) => ({y: countryProfit[prop]})))
+    ].map((prop) => countryProfitsData.map((countryProfitData) => ({y: countryProfitData.data[prop]})))
     : [];
 };
 const getCountryName = (countryId) => {

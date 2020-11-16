@@ -9,23 +9,23 @@ import * as worldProfits from './components/CountryInfo/data/worldProfits.json';
 import 'react-responsive-modal/styles.css';
 import { Modal } from 'react-responsive-modal';
 
-const getCountriesData = () =>
+const getCountriesProfitsData = () =>
   Object.keys(worldProfits.default).map((countryId) => {
     const profitsList = worldProfits.default[countryId];
     return ({
       id: countryId,
-      profits: profitsList[profitsList.length - 1].profits
+      profits: profitsList[profitsList.length - 1].data.profits
     })
 });
 
 function App() {
   const [selectedCountryId, setSelectedCountryId] = useState(null);
-  const [countiesData] = useState(getCountriesData());
+  const [countiesProfits] = useState(getCountriesProfitsData());
   return (
     <div className="worldProfits">
       <div className="worldProfits_wrapper">
         <Map
-          data={countiesData}
+          data={countiesProfits}
           onSelectedCountryIdChange={setSelectedCountryId}
         />
       </div>
