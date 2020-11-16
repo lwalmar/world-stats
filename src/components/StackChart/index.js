@@ -79,7 +79,15 @@ class StackChart extends React.Component {
       .attr("x", (d, i) => this.scaleWidth(d.x))
       .attr("y", (d) => this.scaleHeight(d.y0))
       .attr("height", (d) => (this.scaleHeight(0) - this.scaleHeight(d.size)))
-      .attr("width", this.scaleWidth.bandwidth());
+      .attr("width", this.scaleWidth.bandwidth())
+      .on("mouseover", function() { tooltip.style("display", null); })
+      .on("mouseout", function() { tooltip.style("display", "none"); })
+      .on("mousemove", function(event, d) {
+        const xPosition = d3.pointer(event)[0] - 35;
+        const yPosition = d3.pointer(event)[1] - 5;
+        tooltip.attr("transform", "translate(" + xPosition + "," + yPosition + ")");
+        tooltip.select("text").text(d.y);
+      });
 
     var xAxis = d3.axisBottom()
       .scale(this.scaleWidth);
@@ -99,10 +107,11 @@ class StackChart extends React.Component {
     ))
 
     this.drawLine(svg);
+    const tooltip = this.drawTooltip(svg)
   }
 
   drawLine (svg) {
-    const {lineData, margin} = this.props;
+    const {lineData} = this.props;
     const line = d3.line()
       .x((d) => this.scaleWidth(d.x) + this.scaleWidth.bandwidth()/2)
       .y((d) => this.scaleHeight(d.y));
@@ -111,6 +120,27 @@ class StackChart extends React.Component {
       .datum(lineData)
       .attr("class", "barChart_line")
       .attr("d", line);
+  }
+
+  drawTooltip (svg) {
+    const tooltip = svg.append("g")
+      .attr("class", "tooltip")
+      .style("display", "none");
+
+    tooltip.append("rect")
+      .attr("width", 30)
+      .attr("height", 20)
+      .attr("fill", "white")
+      .style("opacity", 0.5);
+
+    tooltip.append("text")
+      .attr("x", 15)
+      .attr("dy", "1.2em")
+      .style("text-anchor", "middle")
+      .attr("font-size", "12px")
+      .attr("font-weight", "bold");
+
+    return tooltip;
   }
 
   updateScales() {
