@@ -10,6 +10,20 @@
     height: 100%;
 }
 
+.countryInfo_title {
+    font-size: 44px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.countryInfo_subtitle {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
 .countryInfo_chart {
     display: flex;
     flex: 1;

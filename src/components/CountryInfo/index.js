@@ -51,8 +51,11 @@ export const CountryInfo = ({
 
   return (
     <div className="countryInfo">
-      <div className='countryInfo_header'>
+      <div className='countryInfo_title'>
         {countryName}
+      </div>
+      <div className='countryInfo_subtitle'>
+        {'Profits after Taxes, $bln/year'}
       </div>
       <div
         className='countryInfo_chart'
