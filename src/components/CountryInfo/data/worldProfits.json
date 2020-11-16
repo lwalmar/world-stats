@@ -264,7 +264,10 @@
       }}
   ],
   "TUR": [
-    {"period": "2003-Year", "profits": 69, "dividendsAndBuybacks": 21, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsofDomesticBusiness": -38, "currentAmount": 47, "otherFactors": -19, "discrepancies": -31},
+    {
+      "period": "2003-Year",
+      "data": {"profits": 69, "dividendsAndBuybacks": 21, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsofDomesticBusiness": -38, "currentAmount": 47, "otherFactors": -19, "discrepancies": -31}
+    },
     {
       "period": "2004-Year",
       "data": {"profits": 69, "dividendsAndBuybacks": 29, "netDebtOfHouseholdsAndNISH": null, "netDebtOfGeneralGovernment": null, "fixedAssetsofDomesticBusiness": 54, "currentAmount": 72, "otherFactors": -22, "discrepancies": -58}
