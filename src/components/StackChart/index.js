@@ -73,11 +73,11 @@ class StackChart extends React.Component {
     series.enter()
       .append("g")
       .classed("series",true)
-      .style("fill", (d,i) => { return this.scaleColor(i) })
+      .style("fill", (d,i) => this.scaleColor(i))
       .selectAll("rect").data(Object)
       .enter().append("rect")
-      .attr("x", (d, i) => ( this.scaleWidth(i)))
-      .attr("y", (d) => ( this.scaleHeight(d.y0) ))
+      .attr("x", (d, i) => this.scaleWidth(d.x))
+      .attr("y", (d) => this.scaleHeight(d.y0))
       .attr("height", (d) => (this.scaleHeight(0) - this.scaleHeight(d.size)))
       .attr("width", this.scaleWidth.bandwidth());
 
@@ -106,7 +106,7 @@ class StackChart extends React.Component {
       return;
     }
     this.scaleWidth
-      .domain(data[0].map((d, i) => i))
+      .domain(data[0].map((d) => d.x))
       .range([margin, width - margin]);
 
     barStack(data);

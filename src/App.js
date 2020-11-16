@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import './components/BarChart';
-import BarChart from './components/BarChart';
 import Map from './components/Map';
 import {CountryInfo} from './components/CountryInfo';
 import * as worldProfits from './components/CountryInfo/data/worldProfits.json';

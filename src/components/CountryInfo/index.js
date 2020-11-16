@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import * as worldProfits from './data/worldProfits.json';
 import * as worldCountries from '../Map/data/world_countries.json';
-import StackChart from '../BarChart';
+import StackChart from '../StackChart';
 import './styles.css';
 
 const getCountryProfitData = (countryId) => {
@@ -17,7 +17,7 @@ const getCountryProfitData = (countryId) => {
       'currentAmount',
       'otherFactors',
       'discrepancies'
-    ].map((prop) => countryProfitsData.map((countryProfitData) => ({y: countryProfitData.data[prop]})))
+    ].map((prop) => countryProfitsData.map((countryProfitData) => ({x: countryProfitData.period, y: countryProfitData.data[prop]})))
     : [];
 };
 const getCountryName = (countryId) => {
