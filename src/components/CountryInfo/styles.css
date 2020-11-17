@@ -1,5 +1,9 @@
+.react-responsive-modal-overlay {
+    padding: 20px;
+}
+
 .react-responsive-modal-modal {
-    height: 100%;
+    height: calc(100% - 40px);
     max-width: 1400px !important;
     width: 100%;
 }
