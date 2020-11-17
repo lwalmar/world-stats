@@ -42,8 +42,6 @@ const barStack = (seriesData) => {
 }
 
 class StackChart extends React.Component {
-
-  scaleColor = d3.scaleSequential(d3.interpolateViridis);
   scaleHeight = d3.scaleLinear();
   scaleWidth = d3.scaleBand().padding(0.1);
 
@@ -79,7 +77,7 @@ class StackChart extends React.Component {
     series.enter()
       .append("g")
       .classed("series",true)
-      .style("fill", (d,i) => this.scaleColor(i))
+      .style("fill", (d) => d[0].color)
       .selectAll("rect").data(Object)
       .enter().append("rect")
       .attr("x", (d, i) => this.scaleWidth(d.x))
@@ -151,7 +149,6 @@ class StackChart extends React.Component {
 
   updateScales() {
     const { stackData, width, height, margin } = this.props;
-    this.scaleColor.domain([0, stackData.length]);
     if (stackData.length === 0) {
       return;
     }
@@ -177,11 +174,11 @@ class StackChart extends React.Component {
 
 StackChart.propTypes = {
   animDuration: PropTypes.number,
-  lineData: PropTypes.array.isRequired,
-  stackData: PropTypes.array.isRequired,
   margin: PropTypes.number,
-  width: PropTypes.number.isRequired,
-  height: PropTypes.number.isRequired
+  lineData: PropTypes.array.isRequired,
+  height: PropTypes.number.isRequired,
+  stackData: PropTypes.array.isRequired,
+  width: PropTypes.number.isRequired
 };
 
 StackChart.defaultProps = {
