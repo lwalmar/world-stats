@@ -27,4 +27,16 @@
 .countryInfo_chart {
     display: flex;
     flex: 1;
+    flex-direction: column;
+}
+
+.countryInfoChart_canvas {
+    flex: 1;
+}
+
+.countryInfo_legend {
+    display: flex;
+    padding-top: 12px;
+    flex-basis: 80px;
+    justify-content: center;
 }

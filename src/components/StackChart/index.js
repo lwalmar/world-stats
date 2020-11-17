@@ -175,10 +175,6 @@ class StackChart extends React.Component {
   }
 }
 
-StackChart.defaultProps = {
-  animDuration: 600
-};
-
 StackChart.propTypes = {
   animDuration: PropTypes.number,
   lineData: PropTypes.array.isRequired,
@@ -188,6 +184,9 @@ StackChart.propTypes = {
   height: PropTypes.number.isRequired
 };
 
-StackChart.defaultProps = {margin: 0};
+StackChart.defaultProps = {
+  animDuration: 600,
+  margin: 0
+};
 
 export default StackChart;
