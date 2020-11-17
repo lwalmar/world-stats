@@ -9,15 +9,23 @@ class Map extends React.Component {
     this.updateChart();
   }
 
+  componentDidUpdate (prevProps) {
+    if (this.props.width !== prevProps.width || this.props.height !== prevProps.height) {
+      this.updateChart();
+    }
+  }
+
   async updateChart() {
-    //this.updateScales();
+    if (this.props.width === 0 || this.props.height === 0) {
+      return;
+    }
     const { data, onSelectedCountryIdChange } = this.props;
 
     const format = d3.format(',');
 
     const margin = {top: 0, right: 0, bottom: 0, left: 0};
-    const width = 1000 - margin.left - margin.right;
-    const height = 700 - margin.top - margin.bottom;
+    const width = this.props.width - margin.left - margin.right;
+    const height = this.props.height - margin.top - margin.bottom;
 
     const color = d3.scaleThreshold()
       .domain([
@@ -115,17 +123,6 @@ class Map extends React.Component {
     }
 
     return svg.node()
-  }
-
-  updateScales() {
-    const { data, width, height } = this.props;
-    this.scaleColor.domain([0, data.length]);
-    this.scaleWidth
-      .domain(data.map((d) => (d.item)))
-      .range([0, width]);
-    this.scaleHeight
-      .domain(d3.extent(data, (d) => (d.count)))
-      .range([height - 20, 0]);
   }
 
   render() {
