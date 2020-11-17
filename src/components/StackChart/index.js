@@ -3,6 +3,12 @@ import PropTypes from "prop-types";
 import * as d3 from "d3";
 import './styles.css';
 
+const formatFloat = (value) => {
+  if (value) {
+    return Math.round(value*100)/100;
+  }
+  return value
+};
 const barStack = (seriesData) => {
   if (seriesData.length === 0) {
     return [];
@@ -83,10 +89,10 @@ class StackChart extends React.Component {
       .on("mouseover", function() { tooltip.style("display", null); })
       .on("mouseout", function() { tooltip.style("display", "none"); })
       .on("mousemove", function(event, d) {
-        const xPosition = d3.pointer(event)[0] - 35;
+        const xPosition = d3.pointer(event)[0] - 55;
         const yPosition = d3.pointer(event)[1] - 5;
         tooltip.attr("transform", "translate(" + xPosition + "," + yPosition + ")");
-        tooltip.select("text").text(d.y);
+        tooltip.select("text").text(formatFloat(d.y));
       });
 
     var xAxis = d3.axisBottom()
@@ -128,13 +134,13 @@ class StackChart extends React.Component {
       .style("display", "none");
 
     tooltip.append("rect")
-      .attr("width", 30)
+      .attr("width", 50)
       .attr("height", 20)
       .attr("fill", "white")
       .style("opacity", 0.5);
 
     tooltip.append("text")
-      .attr("x", 15)
+      .attr("x", 25)
       .attr("dy", "1.2em")
       .style("text-anchor", "middle")
       .attr("font-size", "12px")
