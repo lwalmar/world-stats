@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import Period from "../../modules/Period";
 import * as d3 from "d3";
 import './styles.css';
 
@@ -9,6 +10,14 @@ const formatFloat = (value) => {
   }
   return value
 };
+
+const formatPeriod = (stringRepr) => {
+  if (stringRepr) {
+    return Period.fromStringRepr(stringRepr).toString()
+  }
+  return stringRepr;
+};
+
 const barStack = (seriesData) => {
   if (seriesData.length === 0) {
     return [];
@@ -94,7 +103,8 @@ class StackChart extends React.Component {
       });
 
     var xAxis = d3.axisBottom()
-      .scale(this.scaleWidth);
+      .scale(this.scaleWidth)
+      .tickFormat(formatPeriod);
 
     var yAxis = d3.axisLeft()
       .scale(this.scaleHeight)
