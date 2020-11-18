@@ -12,7 +12,8 @@ const getCountriesProfitsData = () =>
     const profitsList = worldProfits.default[countryId];
     return ({
       id: countryId,
-      profits: profitsList[profitsList.length - 1].data.profits
+      profits: profitsList[profitsList.length - 1].data.profits,
+      period: profitsList[profitsList.length - 1].period
     })
 });
 

@@ -1,10 +1,18 @@
 import React from "react";
+import Period from "../../modules/Period";
 import PropTypes from "prop-types";
 import * as d3 from "d3";
 import {getMapTip} from "../../modules/map-tip.js";
 import * as topojson from "topojson";
 import * as worldCountries from './data/world_countries.json';
 import './styles.css';
+
+const formatPeriod = (stringRepr) => {
+  if (stringRepr) {
+    return Period.fromStringRepr(stringRepr).toString()
+  }
+  return stringRepr;
+};
 
 class Map extends React.Component {
   componentDidMount() {
@@ -19,19 +27,19 @@ class Map extends React.Component {
 
   getTip () {
     // Set tooltips
-    const tip = getMapTip()(c)
+    const tip = getMapTip()
       .attr('class', 'd3-tip')
       .offset([-10, 0])
       .html(
         d => {
           console.log('d', d)
-          return `<strong>Country: </strong><span class='details'>${
-            d.properties.name
-            }<br></span><strong>Profits: </strong><span class='details'>${d.profits}</span>`
+          return `<strong>Country: </strong><span class='details'>${d.properties.name}</span><br>
+          <strong>Profits: </strong><span class='details'>${Math.round(d.profits)} $bln</span><br>
+          <strong>Year: </strong><span class='details'>${formatPeriod(d.period)}</span><br>
+          `
         })
 
     tip.direction(function(d) {
-      console.log('d', d)
       if (d.properties.name === 'Antarctica') return 'n'
       // Americas
       if (d.properties.name === 'Greenland') return 's'
@@ -147,16 +155,17 @@ class Map extends React.Component {
     const path = d3.geoPath().projection(projection);
     ready(worldCountries, data)
 
-    function ready(countriesData, profits) {
-      const profitsById = {};
-      profits.forEach(d => {
-        profitsById[d.id] = +d.profits;
+    function ready(countriesData, profitsData) {
+      const profitsDataById = {};
+      profitsData.forEach(d => {
+        profitsDataById[d.id] = d;
       });
       countriesData.default.features.forEach(d => {
-        d.profits = profitsById[d.id]
+        d.profits = +profitsDataById[d.id]?.profits;
+        d.period = profitsDataById[d.id]?.period;
       });
 
-      function clicked(event, data, item) {
+      function clicked(event, data) {
         event.stopPropagation();
         onSelectedCountryIdChange(data.id);
       }
@@ -171,7 +180,7 @@ class Map extends React.Component {
         .enter().append('path')
         .on("click", clicked)
         .attr('d', path)
-        .style('fill', d => color(profitsById[d.id]))
+        .style('fill', d => color(profitsDataById[d.id]?.profits))
         .style('stroke', 'white')
         .style('opacity', 0.8)
         .style('stroke-width', 0.3)
