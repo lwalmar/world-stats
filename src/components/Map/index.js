@@ -28,17 +28,17 @@ class Map extends React.Component {
   getTip () {
     // Set tooltips
     const tip = getMapTip()
-      .attr('class', 'd3-tip')
+      .attr('class', 'mapTooltip')
       .offset([-10, 0])
       .html(
         d => {
-          return `<strong>Country: </strong><span class='details'>${d.properties.name}</span><br>
-          <strong>Profits: </strong><span class='details'>${Math.round(d.profits)} $bln</span><br>
-          <strong>Year: </strong><span class='details'>${formatPeriod(d.period)}</span><br>
+          return `<strong>Country: </strong><span class='mapTooltip_details'>${d.properties.name}</span><br>
+          <strong>Profits: </strong><span class='mapTooltip_details'>${Math.round(d.profits)} $bln</span><br>
+          <strong>Year: </strong><span class='mapTooltip_details'>${formatPeriod(d.period)}</span><br>
           `
         })
 
-    tip.direction(function(d) {
+    tip.direction((d) => {
       if (d.properties.name === 'Antarctica') return 'n'
       // Americas
       if (d.properties.name === 'Greenland') return 's'
@@ -63,7 +63,7 @@ class Map extends React.Component {
       return 'n'
     })
 
-    tip.offset(function(d) {
+    tip.offset((d) => {
       // [top, left]
       if (d.properties.name === 'Antarctica') return [0, 0]
       // Americas

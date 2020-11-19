@@ -1,5 +1,5 @@
 /* Tooltip CSS */
-.d3-tip {
+.mapTooltip {
     line-height: 1.5;
     font-weight: 400;
     font-family:"avenir next", Arial, sans-serif;
@@ -11,7 +11,7 @@
 }
 
 /* Creates a small triangle extender for the tooltip */
-.d3-tip:after {
+.mapTooltip:after {
     box-sizing: border-box;
     display: inline;
     font-size: 8px;
@@ -24,7 +24,7 @@
 }
 
 /* Northward tooltips */
-.d3-tip.n:after {
+.mapTooltip.n:after {
     content: "\25BC";
     margin: -1px 0 0 0;
     top: 100%;
@@ -33,7 +33,7 @@
 }
 
 /* Eastward tooltips */
-.d3-tip.e:after {
+.mapTooltip.e:after {
     content: "\25C0";
     margin: -4px 0 0 0;
     top: 50%;
@@ -41,7 +41,7 @@
 }
 
 /* Southward tooltips */
-.d3-tip.s:after {
+.mapTooltip.s:after {
     content: "\25B2";
     margin: 0 0 1px 0;
     top: -8px;
@@ -50,13 +50,13 @@
 }
 
 /* Westward tooltips */
-.d3-tip.w:after {
+.mapTooltip.w:after {
     content: "\25B6";
     margin: -4px 0 0 -1px;
     top: 50%;
     left: 100%;
 }
 
-.details{
+.mapTooltip_details{
     color: white;
 }
