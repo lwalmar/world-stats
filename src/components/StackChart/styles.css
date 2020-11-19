@@ -23,7 +23,9 @@
     color: #FFA500;
     border-radius: 1px;
     pointer-events: none;
-
     position: absolute;
-    height: 28px;
+}
+
+.stackChart_details{
+    color: white;
 }

@@ -97,13 +97,19 @@ class StackChart extends React.Component {
       .attr("y", (d) => this.scaleHeight(d.y0))
       .attr("height", (d) => (this.scaleHeight(0) - this.scaleHeight(d.size)))
       .attr("width", this.scaleWidth.bandwidth())
-      .on("mouseout", function() { tooltip.style("visibility", "hidden"); })
+      .on("mouseout", function() {
+        d3.select(this).style('opacity', 1)
+        tooltip.style("visibility", "hidden");
+      })
       .on("mousemove", function(event, d) {
         const [x, y] = d3.pointer(event);
-        const xPosition = x + 5;
-        const yPosition = y + 10;
+        const xPosition = x;
+        const yPosition = y + 20;
+        d3.select(this)
+          .style('cursor', "pointer")
+          .style('opacity', 0.7)
         tooltip
-          .html(`<strong>${d.title}: </strong><span class='details'>${formatInt(d.y)} $bln</span>`)
+          .html(`<strong>${d.title}: </strong><span class='stackChart_details'>${formatInt(d.y)} $bln</span>`)
           .style("top", (yPosition) + "px")
         if (x > width/2) {
           tooltip
