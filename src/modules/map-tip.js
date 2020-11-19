@@ -180,8 +180,6 @@ export const getMapTip = () => {
   }
 
   function directionWest(d, event) {
-    console.log('d', d)
-    console.log('event', event)
     var bbox = getScreenBBox(event)
     return {
       top:  bbox.w.y - node.offsetHeight / 2,

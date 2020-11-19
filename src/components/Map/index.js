@@ -166,7 +166,9 @@ class Map extends React.Component {
 
       function clicked(event, data) {
         event.stopPropagation();
-        onSelectedCountryIdChange(data.id);
+        if (data.profits) {
+          onSelectedCountryIdChange(data.id);
+        }
       }
 
       const g = svg.append("g");
