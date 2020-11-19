@@ -1,10 +1,29 @@
-.barChart_dividingLine {
+.stackChart {
+    display: flex;
+    position: relative;
+}
+
+.stackChart_dividingLine {
     fill: none;
     stroke: white;
 }
 
-.barChart_line {
+.stackChart_line {
     fill: none;
     stroke: #000;
     stroke-width: 2px;
+}
+
+.stackChart_tooltip {
+    line-height: 1.5;
+    font-weight: 400;
+    font-family:"avenir next", Arial, sans-serif;
+    padding: 6px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #FFA500;
+    border-radius: 1px;
+    pointer-events: none;
+
+    position: absolute;
+    height: 28px;
 }
