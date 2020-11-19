@@ -23,7 +23,7 @@ html, body, #root {
 
 .worldProfits_title {
   font-size: 32px;
-  background: rgba(177, 177, 160, 0.8);
+  background: rgba(255, 165, 0, 0.65);
   font-weight: bold;
   flex-basis: 40px;
   padding: 10px 0;
