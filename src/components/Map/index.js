@@ -109,7 +109,8 @@ class Map extends React.Component {
       return;
     }
     const tip = this.getTip();
-    const { data, onSelectedCountryIdChange } = this.props;
+    const { onSelectedCountryIdChange } = this.props;
+    const profitsData = this.props.data;
 
     const margin = {top: 0, right: 0, bottom: 0, left: 0};
     const width = this.props.width - margin.left - margin.right;
@@ -140,85 +141,80 @@ class Map extends React.Component {
         'rgb(3,19,43)',
         'rgb(3,19,43)'
       ]);
-
-    const svg = d3.select(this.viz)
-      .attr('width', width)
-      .attr('height', height)
-      .append('g')
-      .attr('class', 'map');
-
     const projection = d3.geoMercator()
       .scale(150)
       .translate( [width / 2, height / 1.5]);
 
     const path = d3.geoPath().projection(projection);
-    ready(worldCountries, data)
+    const zoom = d3.zoom()
+      .scaleExtent([1, 8])
+      .on("zoom", zoomed);
 
-    function ready(countriesData, profitsData) {
-      const profitsDataById = {};
-      profitsData.forEach(d => {
-        profitsDataById[d.id] = d;
-      });
-      countriesData.default.features.forEach(d => {
-        d.profits = +profitsDataById[d.id]?.profits;
-        d.period = profitsDataById[d.id]?.period;
-      });
+    const svg = d3.select(this.viz)
+      .attr('width', width)
+      .attr('height', height)
+      .call(zoom)
+      .append('g')
+      .attr('class', 'map');
 
-      function clicked(event, data) {
-        event.stopPropagation();
-        if (data.profits) {
-          onSelectedCountryIdChange(data.id);
-        }
+    const g = svg.append("g");
+
+    function clicked(event, data) {
+      event.stopPropagation();
+      if (data.profits) {
+        onSelectedCountryIdChange(data.id);
       }
-
-      const g = svg.append("g");
-      svg.call(tip)
-
-      g.append('g')
-        .attr('class', 'countries')
-        .selectAll('path')
-        .data(countriesData.default.features)
-        .enter().append('path')
-        .on("click", clicked)
-        .attr('d', path)
-        .style('fill', d => color(profitsDataById[d.id]?.profits))
-        .style('stroke', 'white')
-        .style('opacity', 0.8)
-        .style('stroke-width', 0.3)
-        // tooltips
-        .on('mouseover', function(event, d) {
-          if (d.profits) {
-            tip.show(d, event)
-            d3.select(this)
-              .style('cursor', "pointer")
-              .style('opacity', 1)
-              .style('stroke-width', 1)
-          }
-        })
-        .on('mouseout', function(event, d) {
-          tip.hide(d, event)
-          d3.select(this)
-            .style('opacity', 0.8)
-            .style('stroke-width', 0.3)
-        })
-
-      const zoom = d3.zoom()
-        .scaleExtent([1, 8])
-        .on("zoom", zoomed);
-
-      function zoomed(event) {
-        const {transform} = event;
-        g.attr("transform", transform);
-        g.attr("stroke-width", 1 / transform.k);
-      }
-
-      svg.call(zoom);
-
-      svg.append('path')
-        .datum(topojson.mesh(countriesData.default, (a, b) => a.id !== b.id))
-        .attr('class', 'names')
-        .attr('d', path);
     }
+
+    const profitsDataById = {};
+    profitsData.forEach(d => {
+      profitsDataById[d.id] = d;
+    });
+    worldCountries.default.features.forEach(d => {
+      d.profits = +profitsDataById[d.id]?.profits;
+      d.period = profitsDataById[d.id]?.period;
+    });
+
+    function zoomed (event) {
+      console.log('zoomed')
+      const {transform} = event;
+      g.attr("transform", transform);
+      g.attr("stroke-width", 1 / transform.k);
+    }
+    svg.call(tip)
+
+    g.append('g')
+      .attr('class', 'countries')
+      .selectAll('path')
+      .data(worldCountries.default.features)
+      .enter().append('path')
+      .on("click", clicked)
+      .attr('d', path)
+      .style('fill', d => color(profitsDataById[d.id]?.profits))
+      .style('stroke', 'white')
+      .style('opacity', 0.8)
+      .style('stroke-width', 0.3)
+      // tooltips
+      .on('mouseover', function(event, d) {
+        if (d.profits) {
+          tip.show(d, event)
+          d3.select(this)
+            .style('cursor', "pointer")
+            .style('opacity', 1)
+            .style('stroke-width', 1)
+        }
+      })
+      .on('mouseout', function(event, d) {
+        tip.hide(d, event)
+        d3.select(this)
+          .style('opacity', 0.8)
+          .style('stroke-width', 0.3)
+      })
+
+    svg.append('path')
+      .datum(topojson.mesh(worldCountries.default, (a, b) => a.id !== b.id))
+      .attr('class', 'names')
+      .attr('d', path);
 
     return svg.node()
   }
