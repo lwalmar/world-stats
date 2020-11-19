@@ -9,7 +9,6 @@ html, body, #root {
 .worldProfits {
   text-align: center;
   height: 100%;
-  background: rgba(177, 177, 177, 0.7);
   display: flex;
   justify-content: center;
   vertical-align: middle;
@@ -19,11 +18,13 @@ html, body, #root {
 .worldProfits_wrapper {
   background: #fff;
   flex: 1;
+  box-shadow: inset 0 0 10px #000000;
 }
 
 .worldProfits_title {
   font-size: 32px;
+  background: rgba(177, 177, 160, 0.8);
   font-weight: bold;
-  flex-basis: 60px;
-  padding: 20px 0;
+  flex-basis: 40px;
+  padding: 10px 0;
 }
