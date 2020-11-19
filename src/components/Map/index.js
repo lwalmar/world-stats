@@ -32,7 +32,6 @@ class Map extends React.Component {
       .offset([-10, 0])
       .html(
         d => {
-          console.log('d', d)
           return `<strong>Country: </strong><span class='details'>${d.properties.name}</span><br>
           <strong>Profits: </strong><span class='details'>${Math.round(d.profits)} $bln</span><br>
           <strong>Year: </strong><span class='details'>${formatPeriod(d.period)}</span><br>
@@ -186,10 +185,13 @@ class Map extends React.Component {
         .style('stroke-width', 0.3)
         // tooltips
         .on('mouseover', function(event, d) {
-          tip.show(d, event)
-          d3.select(this)
-            .style('opacity', 1)
-            .style('stroke-width', 1)
+          if (d.profits) {
+            tip.show(d, event)
+            d3.select(this)
+              .style('cursor', "pointer")
+              .style('opacity', 1)
+              .style('stroke-width', 1)
+          }
         })
         .on('mouseout', function(event, d) {
           tip.hide(d, event)
