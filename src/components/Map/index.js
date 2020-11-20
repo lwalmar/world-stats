@@ -35,7 +35,7 @@ class Map extends React.Component {
         d => {
           return `<strong>Country: </strong><span class='mapTooltip_details'>${d.properties.name}</span><br>
           <strong>Profits: </strong><span class='mapTooltip_details'>${Math.round(d.profits)} $bln</span><br>
-          <strong>Year: </strong><span class='mapTooltip_details'>${formatPeriod(d.period)}</span><br>
+          <strong>Period: </strong><span class='mapTooltip_details'>${formatPeriod(d.period)}</span><br>
           `
         })
 
