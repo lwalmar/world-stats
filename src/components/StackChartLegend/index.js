@@ -9,7 +9,10 @@ const StackChartLegend = ({
   return (<div className='stackChartLegend'>
     {
       Object.keys(legendMap).map((legendKey) => (
-        <div className='stackChartLegend_item'>
+        <div
+          className='stackChartLegend_item'
+          key={legendKey}
+        >
           <div className={`stackChartLegend_${legendMap[legendKey].type}`} style={{background: legendMap[legendKey].color}}></div>
           <div className='stackChartLegend_title'>{legendMap[legendKey].title}</div>
         </div>
