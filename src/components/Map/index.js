@@ -51,7 +51,7 @@ class Map extends React.Component {
       if (d.properties.name === 'Norway') return 's'
       if (d.properties.name === 'Sweden') return 's'
       if (d.properties.name === 'Finland') return 's'
-      if (d.properties.name === 'Russia') return 'w'
+      if (d.properties.name === 'Russia') return 's'
       // Asia
       if (d.properties.name === 'China') return 'w'
       if (d.properties.name === 'Japan') return 's'
@@ -80,7 +80,7 @@ class Map extends React.Component {
       if (d.properties.name === 'Finland') return [10, 0]
       if (d.properties.name === 'France') return [-9, 66]
       if (d.properties.name === 'Italy') return [-8, -6]
-      if (d.properties.name === 'Russia') return [5, 385]
+      if (d.properties.name === 'Russia') return [-30, -10]
       // Africa
       if (d.properties.name === 'Madagascar') return [-10, 10]
       // Asia
