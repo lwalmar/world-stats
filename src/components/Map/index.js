@@ -2,6 +2,7 @@ import React from "react";
 import Period from "../../modules/Period";
 import PropTypes from "prop-types";
 import * as d3 from "d3";
+import * as d3geo from "d3-geo-projection";
 import {getMapTip} from "../../modules/map-tip.js";
 import * as topojson from "topojson";
 import * as worldCountries from './data/world_countries.json';
@@ -141,9 +142,11 @@ class Map extends React.Component {
         'rgb(3,19,43)',
         'rgb(3,19,43)'
       ]);
-    const projection = d3.geoMercator()
-      .scale(150)
-      .translate( [width / 2, height / 1.5]);
+
+    const projection = d3geo.geoRobinson()
+      .scale(220)
+      .rotate([349, 0, 0])
+      .translate( [width / 2, height / 1.8]);
 
     const path = d3.geoPath().projection(projection);
     const zoom = d3.zoom()
