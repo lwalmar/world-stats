@@ -29,5 +29,6 @@ html, body, #root {
   font-size: 32px;
   background: rgba(255, 165, 0, 0.65);
   font-weight: bold;
-  flex-basis: 40px;
+  flex-basis: 44px;
+  padding-top: 6px;
 }
