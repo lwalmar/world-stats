@@ -180,11 +180,11 @@ class StackChart extends React.Component {
   render() {
     const { width, height } = this.props;
     return (
-      <div class="stackChart">
+      <div className="stackChart">
         <svg ref={ viz => (this.viz = viz) }
              width={width} height={height} >
         </svg>
-        <div class="stackChart_tooltip"></div>
+        <div className="stackChart_tooltip"></div>
       </div>
     );
   }
