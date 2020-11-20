@@ -7,6 +7,7 @@ html, body, #root {
 }
 
 .worldProfits {
+  min-width: 980px;
   text-align: center;
   height: 100%;
   display: flex;

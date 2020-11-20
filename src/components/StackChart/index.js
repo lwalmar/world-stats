@@ -123,6 +123,14 @@ class StackChart extends React.Component {
 
     var xAxis = d3.axisBottom()
       .scale(this.scaleWidth)
+      .tickValues(this.scaleWidth.domain().filter((d,i) => {
+        const domain = this.scaleWidth.domain();
+        const MAX_TICKS = 20;
+        if (domain.length > MAX_TICKS) {
+          return !(i%Math.ceil(domain.length/MAX_TICKS))
+        }
+        return true
+      }))
       .tickFormat(formatPeriod);
 
     var yAxis = d3.axisLeft()
